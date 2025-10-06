@@ -1,28 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 19:27:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 13:36:07 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/05 23:08:16 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/06 12:36:10 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+int	ft_atoi(const char *str)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+	int	result;
+	int	sign;
+
+	result = 0;
+	sign = 1;
+	while (*str == ' ' || (*str >= '\t' && *str <= '\r'))
+		str++;
+
+	if (*str == '+' || *str == '-')
+	{
+		if (*str == '-')
+			sign = -1;
+		str++;
+	}
+	while (*str >= '0' && *str <= '9')
+	{
+		result = result * 10 + (*str - '0');
+		str++;
+	}
+
+	return (result * sign);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
+#include <stdlib.h>
 int	main(int argc, char *argv[])
 {
 	if (argc == 2)
 	{
-		printf("%d\n", ft_isalnum(argv[1][0]));
+		printf("string converted to int %d\n", ft_atoi(argv[1]));
 	}
 	return (0);
 }*/

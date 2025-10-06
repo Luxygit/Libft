@@ -1,28 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 19:27:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 13:36:07 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/03 17:37:59 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/03 18:53:26 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include <stddef.h>
+
+void	ft_bzero(void *c, size_t n)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+	unsigned char	*p;
+
+	p = (unsigned char *)c;
+	while (n > 0)
+	{
+		*p = 0;
+		p++;
+		n--; 
+	}
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
+#include <stdlib.h>
 int	main(int argc, char *argv[])
 {
-	if (argc == 2)
+	char	*arr = argv[1];
+	if (argc == 3)
 	{
-		printf("%d\n", ft_isalnum(argv[1][0]));
+		printf("ptr was %s\n", arr);
+		ft_bzero(arr + 1, atoi(argv[2]));
+		printf("ptr is now %s\n", arr);
 	}
 	return (0);
 }*/

@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 19:27:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 13:36:07 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/02 19:52:27 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/03 12:08:36 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+int	ft_strlen(char *c)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+	int	count;
+
+	count = 0;
+	while(*c != '\0')
+	{
+		count++;
+		c++;
+	}
+	return (count);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 int	main(int argc, char *argv[])
 {
 	if (argc == 2)
 	{
-		printf("%d\n", ft_isalnum(argv[1][0]));
+		printf("%d\n", ft_strlen(argv[1]));
 	}
 	return (0);
 }*/

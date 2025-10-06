@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 19:27:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 13:36:07 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/02 17:58:32 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/02 19:27:39 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+int	ft_isprint(int c)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	if (c >= 32 && c <= 126)
 		return (1);
 	else
 		return (0);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 int	main(int argc, char *argv[])
 {
-	if (argc == 2)
+	if (argc == 1 && argv[0])
 	{
-		printf("%d\n", ft_isalnum(argv[1][0]));
+		printf("%d\n", ft_isprint('\n'));
+		printf("%d\n", ft_isprint('a'));
 	}
 	return (0);
 }*/

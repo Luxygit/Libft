@@ -1,28 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 19:27:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 13:36:07 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/05 21:15:33 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/05 21:49:12 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include <stddef.h>
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
-}
-/*#include <stdio.h>
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
+	const unsigned char	*c1;
+	const unsigned char	*c2;
+
+	c1 = s1;
+	c2 = s2;
+	while (n > 0)
 	{
-		printf("%d\n", ft_isalnum(argv[1][0]));
+		if (*c1 != *c2)
+			return (*c1 - *c2);
+		c1++;
+		c2++;
+		n--;
 	}
 	return (0);
+}
+/*
+#include <stdio.h>
+#include <stdlib.h>
+int	main(int argc, char *argv[])
+{
+	//char arr[] = { 'a', 'b', 'c', '\0', 'd' };
+	if (argc == 4)
+	{
+		printf("compared strings and the diff is %d\n", ft_memcmp(argv[1], argv[2], atoi(argv[3])));
+	}
+	return (0);
+
 }*/

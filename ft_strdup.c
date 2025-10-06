@@ -1,28 +1,53 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 19:27:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 13:36:07 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/06 15:17:36 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/06 19:16:22 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include <stdlib.h>
+#include <limits.h>
+#include <stddef.h>
+
+char	*ft_strdup(const char *s1)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+	char	*ptr;
+	char	*dup;
+	int	len;
+
+	len = 0;
+	while (s1[len] != '\0')
+	{
+		len++;
+	}
+	ptr = malloc(len + 1);
+	if (!ptr)
+		return (NULL);
+	
+	dup = ptr;
+	while (*s1)
+	{
+		*ptr = *s1;
+		ptr++;
+		s1++;
+	}
+	*ptr = '\0';
+	return (dup);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
+#include <string.h>
 int	main(int argc, char *argv[])
 {
 	if (argc == 2)
 	{
-		printf("%d\n", ft_isalnum(argv[1][0]));
+		printf("copying %s to %s\n", argv[1], ft_strdup(argv[1]));
+		printf("strdup.c copied %s\n", strdup(argv[1]));
 	}
 	return (0);
 }*/

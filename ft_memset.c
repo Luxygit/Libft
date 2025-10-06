@@ -1,28 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 19:27:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 13:36:07 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/03 10:20:14 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/03 18:56:48 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include <stddef.h>
+
+void	ft_memset(void *b, int c, size_t len)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+	unsigned char	*p;
+	unsigned int	i;
+
+	p = (unsigned char *)b;
+	i = 0;
+	while (i < len)
+	{
+		*p = c;
+		p++;
+		i++;
+	}
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
+#include <stdlib.h>
 int	main(int argc, char *argv[])
 {
-	if (argc == 2)
+	char	*arr = argv[1];
+	if (argc == 4)
 	{
-		printf("%d\n", ft_isalnum(argv[1][0]));
+		printf("ptr was %s\n", arr);
+		ft_memset(arr, argv[2][0], atoi(argv[3]));
+		printf("ptr is now %s\n", arr);
 	}
 	return (0);
 }*/

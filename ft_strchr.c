@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 19:27:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 13:36:07 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/05 16:10:10 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/05 17:39:54 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include <stddef.h>
+
+char	*ft_strchr(const char *s, int c)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+	while (*s != '\0')
+	{
+		if (*s == c)
+			return ((char *)s);
+		s++;
+	}
+
+	if (c == '\0')
+		return ((char *)s);
+	return (NULL);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
+#include <stdlib.h>
 int	main(int argc, char *argv[])
 {
-	if (argc == 2)
+	if (argc == 3)
 	{
-		printf("%d\n", ft_isalnum(argv[1][0]));
+		printf("char was %c\n", argv[2][0]);
+		printf("found in the str %s\n", ft_strchr(argv[1], argv[2][0]));
 	}
 	return (0);
 }*/

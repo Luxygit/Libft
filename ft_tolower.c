@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 19:27:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 13:36:07 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/05 16:08:42 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/05 16:10:00 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+int	ft_tolower(int c)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+	if (c >= 'A' && c <= 'Z')
+		c = c + 32;
+
+	return (c);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
+#include <stdlib.h>
 int	main(int argc, char *argv[])
 {
 	if (argc == 2)
 	{
-		printf("%d\n", ft_isalnum(argv[1][0]));
+		printf("ptr was %c\n", argv[1][0]);
+		printf("ptr is now %c\n", ft_tolower(argv[1][0]));
 	}
 	return (0);
 }*/

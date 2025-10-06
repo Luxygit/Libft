@@ -1,28 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 19:27:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 13:36:07 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/05 19:58:57 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/05 21:15:18 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include <stddef.h>
+
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+	const unsigned char	*p;
+	unsigned char	uc;
+
+	p = s;
+	uc = (unsigned char)c;
+	while (n > 0)
+	{
+		if (*p == uc)
+			return ((void *)p);
+		p++;
+		n--;
+	}
+	return (NULL);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
+#include <stdlib.h>
 int	main(int argc, char *argv[])
 {
-	if (argc == 2)
+	//char arr[] = { 'a', 'b', 'c', '\0', 'd' };
+	if (argc == 4)
 	{
-		printf("%d\n", ft_isalnum(argv[1][0]));
+		printf("c was %c\n", argv[2][0]);
+		printf("found in the str %p\n", (void *)ft_memchr(argv[1], argv[2][0], atoi(argv[3])));
 	}
 	return (0);
 }*/

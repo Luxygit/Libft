@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/01 19:27:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 13:36:07 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/05 18:41:43 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/05 19:58:42 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include <stddef.h> 
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
+	if (n == 0)
 		return (0);
+
+	while (*s1 != '\0' && *s2 != '\0' && n > 1 && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+		n--;
+	}
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
+#include <stdlib.h>
 int	main(int argc, char *argv[])
 {
-	if (argc == 2)
+	if (argc == 4)
 	{
-		printf("%d\n", ft_isalnum(argv[1][0]));
+		printf("str 1 was %s\n", argv[1]);
+		printf("compared to str2 %d\n", ft_strncmp(argv[1], argv[2], atoi(argv[3])));
 	}
 	return (0);
 }*/
