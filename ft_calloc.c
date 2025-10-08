@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 12:39:04 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:56:48 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 17:32:14 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_calloc(size_t count, size_t size)
 
 	p = (unsigned char *)ptr;
 	while (total--)
-		*p++ = 1;
+		*p++ = 0;
 
 	return (ptr);
 }

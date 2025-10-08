@@ -6,25 +6,13 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 22:17:42 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:59:26 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 17:41:55 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stddef.h>
 #include <stdlib.h>
-
-static size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	if (!s)
-		return (0);
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
-}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

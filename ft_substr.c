@@ -6,14 +6,14 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 19:21:58 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:54:17 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 17:15:42 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stddef.h>
 #include <stdlib.h>
-
+/*
 static size_t	ft_strlen(const char *s)
 {
 	size_t	len;
@@ -22,7 +22,7 @@ static size_t	ft_strlen(const char *s)
 	while (s[len])
 		len++;
 	return (len);
-}
+}*/
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

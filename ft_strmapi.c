@@ -6,13 +6,13 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 19:52:15 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:56:18 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 17:15:11 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
-
+/*
 static int	ft_strlen(const char *s)
 {
 	int	len;
@@ -23,7 +23,7 @@ static int	ft_strlen(const char *s)
 	while (s[len] != '\0')
 		len++;
 	return (len);
-}
+}*/
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:45:06 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:57:37 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 18:05:28 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <stddef.h>
-# include <limit.h>
+# include <limits.h>
 # include <unistd.h>
 
 int     ft_isalpha(int c);
@@ -45,15 +45,15 @@ int     ft_atoi(const char *str);
 void    *ft_calloc(size_t count, size_t size);
 char    *ft_strdup(const char *s1);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
-char	*ft_strmapi(char const *s, char (*f)(unsigned int char));
-void	ft_striter(char *s, void (*f)(unsigned int, char*));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
-void	ft_putend_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 #endif

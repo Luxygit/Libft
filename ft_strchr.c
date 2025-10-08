@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 16:10:10 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:52:49 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 19:10:36 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (*s != '\0')
 	{
-		if (*s == c)
+		if (*s == (unsigned char)c)
 			return ((char *)s);
 		s++;
 	}
 
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 		return ((char *)s);
 	return (NULL);
 }

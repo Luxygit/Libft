@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 10:58:16 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:57:46 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 16:58:34 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-static size_t	ft_strlen(const char *s)
+/*static size_t	ft_strlen(const char *s)
 {
 	size_t	len;
 
@@ -25,7 +25,7 @@ static size_t	ft_strlen(const char *s)
 		len++;
 	return (len);
 }
-
+*/
 void	ft_putendl_fd(char *s, int fd)
 {
 	size_t	buffersize;

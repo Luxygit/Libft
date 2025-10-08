@@ -6,14 +6,14 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 10:02:06 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:49:08 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 17:11:10 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 #include <stdlib.h>
-
+/*
 static size_t	ft_strlen(const char *s)
 {
 	size_t	len;
@@ -24,7 +24,7 @@ static size_t	ft_strlen(const char *s)
 	while (s[len] != '\0')
 		len++;
 	return (len);
-}
+}*/
 
 void	ft_putstr_fd(char *s, int fd)
 {

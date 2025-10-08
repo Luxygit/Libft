@@ -1,43 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/03 10:20:14 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 16:52:40 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/08 17:48:01 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/08 18:15:48 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
+#include <unistd.h>
 
-void	*ft_memset(void *b, int c, size_t len)
+void	ft_putchar_fd(char c, int fd)
 {
-	unsigned char	*p;
-	size_t		i;
-
-	p = (unsigned char *)b;
-	i = 0;
-	while (i < len)
-	{
-		p[i] = (unsigned char)c;
-		i++;
-	}
-	return (b);
+	write(fd, &c, 1);
 }
 /*
 #include <stdio.h>
-#include <stdlib.h>
-int	main(int argc, char *argv[])
+
+int main(void)
 {
-	char	*arr = argv[1];
-	if (argc == 4)
-	{
-		printf("ptr was %s\n", arr);
-		ft_memset(arr, argv[2][0], atoi(argv[3]));
-		printf("ptr is now %s\n", arr);
-	}
+	char s = 'a';
+
+	ft_putchar_fd(s, 1);
+	ft_putchar_fd('\n', 1);
 	return (0);
 }*/

@@ -6,68 +6,31 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 11:07:54 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:59:12 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 19:02:30 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
-#include <stdlib.h>
-
-static size_t	ft_numlen(int n)
-{
-	size_t	len;
-
-	len =  0;
-	if (n <= 0)
-		len = 1;
-	while (n != 0)
-	{
-		len++;
-		n = n / 10;
-	}
-	return (len);
-}
-
-static char	*ft_itoa(int n)
-{
-	char	*str;
-	int	len;
-	long	nb;
-
-	nb = n;
-	len = ft_numlen(nb);
-	str = malloc(len + 1);
-	if (str == NULL)
-		return (NULL);
-	str[len] = '\0';
-	if (nb == 0)
-		str[0] = '0';
-	if (nb < 0)
-	{
-		str[0] = '-';
-		nb = -nb;
-	}
-	while (nb > 0)
-	{
-		len--;
-		str[len] = (nb % 10) + '0';
-		nb = nb / 10;
-	}
-	return (str);
-}
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	size_t	buffersize;
-	char	*s;
+	char	c;
 	
-	s = ft_itoa(n);
-	if (!s)
+	if (n == -2147483648)
+	{
+		write(fd, "-2147483648", 11);
 		return;
-	buffersize = ft_numlen(n);
-	write(fd, s, buffersize);
-	free(s);
+	}
+	if (n < 0)
+	{
+		write(fd, "-", 1);
+		n = -n;
+	}
+	if (n >= 10)
+		ft_putnbr_fd(n / 10, fd);
+	c = (n % 10) + '0';
+	write(fd, &c, 1);
 }
 /*
 #include <stdio.h>
