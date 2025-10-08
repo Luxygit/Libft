@@ -6,10 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 16:10:10 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/05 17:39:54 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:52:49 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 char	*ft_strchr(const char *s, int c)

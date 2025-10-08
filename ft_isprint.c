@@ -6,9 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 17:58:32 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/02 19:27:39 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:54:47 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

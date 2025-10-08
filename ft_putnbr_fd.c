@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/07 17:45:31 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:57:02 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/08 11:07:54 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/08 14:59:12 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 #include <stdlib.h>
 
-static int	ft_numlen(int n)
+static size_t	ft_numlen(int n)
 {
-	int	len;
+	size_t	len;
 
 	len =  0;
 	if (n <= 0)
@@ -28,7 +29,7 @@ static int	ft_numlen(int n)
 	return (len);
 }
 
-char	*ft_itoa(int n)
+static char	*ft_itoa(int n)
 {
 	char	*str;
 	int	len;
@@ -55,13 +56,25 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+void	ft_putnbr_fd(int n, int fd)
+{
+	size_t	buffersize;
+	char	*s;
+	
+	s = ft_itoa(n);
+	if (!s)
+		return;
+	buffersize = ft_numlen(n);
+	write(fd, s, buffersize);
+	free(s);
+}
 /*
 #include <stdio.h>
-int	main(int argc, char *argv[])
+
+int main(int argc, char *argv [])
 {
-	if (argc > 0 )
-	{
-		printf("alloced this int to ascii %s\n", ft_itoa(atoi((argv[1]))));
-	}
+	if (argc > 0)
+		ft_putnbr_fd(atoi(argv[1]), 1);
 	return (0);
 }*/

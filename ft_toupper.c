@@ -6,9 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 15:42:05 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/05 16:08:35 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:58:29 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

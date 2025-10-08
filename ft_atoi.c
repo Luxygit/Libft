@@ -6,9 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 23:08:16 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/06 12:36:10 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:51:13 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

@@ -6,9 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 19:52:27 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/03 12:08:36 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:53:59 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(char *c)
 {

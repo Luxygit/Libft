@@ -6,10 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/04 13:36:24 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/05 12:08:33 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:51:41 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)

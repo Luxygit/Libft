@@ -6,10 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 22:17:42 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/07 10:35:10 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:59:26 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 #include <stdlib.h>
 

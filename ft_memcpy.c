@@ -6,10 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/04 12:20:47 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/04 15:03:33 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:50:17 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)

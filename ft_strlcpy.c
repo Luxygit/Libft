@@ -6,10 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 13:02:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/05 14:51:09 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:50:43 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)

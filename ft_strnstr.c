@@ -6,10 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 21:58:41 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/07 11:40:44 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:59:42 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)

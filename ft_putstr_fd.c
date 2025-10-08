@@ -1,54 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/06 15:17:36 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:55:21 by dievarga         ###   ########.fr       */
+/*   Created: 2025/10/08 10:02:06 by dievarga          #+#    #+#             */
+/*   Updated: 2025/10/08 14:49:08 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 #include <stdlib.h>
-#include <limits.h>
-#include <stddef.h>
 
-char	*ft_strdup(const char *s1)
+static size_t	ft_strlen(const char *s)
 {
-	char	*ptr;
-	char	*dup;
-	int	len;
+	size_t	len;
 
+	if (s == NULL)
+		return (0);
 	len = 0;
-	while (s1[len] != '\0')
-	{
+	while (s[len] != '\0')
 		len++;
-	}
-	ptr = malloc(len + 1);
-	if (!ptr)
-		return (NULL);
-	
-	dup = ptr;
-	while (*s1)
-	{
-		*ptr = *s1;
-		ptr++;
-		s1++;
-	}
-	*ptr = '\0';
-	return (dup);
+	return (len);
+}
+
+void	ft_putstr_fd(char *s, int fd)
+{
+	size_t	buffersize;
+
+	if (s == NULL)
+		return;
+
+	buffersize = ft_strlen(s);
+	write(fd, s, buffersize);
 }
 /*
 #include <stdio.h>
-#include <string.h>
-int	main(int argc, char *argv[])
+
+int main(void)
 {
-	if (argc == 2)
-	{
-		printf("copying %s to %s\n", argv[1], ft_strdup(argv[1]));
-		printf("strdup.c copied %s\n", strdup(argv[1]));
-	}
+	char s[] = "abcd";
+
+	ft_putstr_fd(s, 1);
+	ft_putstr_fd("\n", 1);
 	return (0);
 }*/

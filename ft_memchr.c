@@ -6,10 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 19:58:57 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/05 21:15:18 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:58:53 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)

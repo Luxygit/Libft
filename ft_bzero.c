@@ -6,10 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 17:37:59 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/03 18:53:26 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:54:34 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 void	ft_bzero(void *c, size_t n)

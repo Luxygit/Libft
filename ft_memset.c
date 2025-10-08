@@ -6,10 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 10:20:14 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/03 18:56:48 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:55:03 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 void	ft_memset(void *b, int c, size_t len)

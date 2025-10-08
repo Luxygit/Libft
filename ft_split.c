@@ -6,10 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 14:21:31 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/07 17:45:18 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:50:28 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 static int	ft_count(const char *s, char c)

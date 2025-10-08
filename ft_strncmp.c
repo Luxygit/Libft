@@ -6,10 +6,11 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 18:41:43 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/05 19:58:42 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:58:17 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h> 
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
