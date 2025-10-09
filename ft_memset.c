@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 10:20:14 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 16:52:40 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:27:23 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*p;
-	size_t		i;
+	size_t			i;
 
 	p = (unsigned char *)b;
 	i = 0;

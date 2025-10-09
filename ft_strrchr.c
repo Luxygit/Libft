@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 17:40:17 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:49:38 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:29:43 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,8 @@ char	*ft_strrchr(const char *s, int c)
 			last = s;
 		s++;
 	}
-
 	if ((char)c == '\0')
 		return ((char *)s);
-
 	return ((char *)last);
 }
 /*

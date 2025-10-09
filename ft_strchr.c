@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 16:10:10 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 19:10:36 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:24:19 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s);
 		s++;
 	}
-
 	if ((unsigned char)c == '\0')
 		return ((char *)s);
 	return (NULL);

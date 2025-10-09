@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 13:02:11 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:50:43 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:28:20 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	{
 		srcsize++;
 	}
-
 	if (dstsize > 0)
 	{
 		while (dstsize > 1 && *src != '\0')
@@ -34,7 +33,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		}
 		*dst = '\0';
 	}
-
 	return (srcsize);
 }
 /*

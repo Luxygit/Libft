@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 10:02:06 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 17:11:10 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:22:26 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,7 @@ void	ft_putstr_fd(char *s, int fd)
 	size_t	buffersize;
 
 	if (s == NULL)
-		return;
-
+		return ;
 	buffersize = ft_strlen(s);
 	write(fd, s, buffersize);
 }

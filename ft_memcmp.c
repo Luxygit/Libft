@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 21:15:33 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:48:45 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:16:30 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,8 @@ int	main(int argc, char *argv[])
 	//char arr[] = { 'a', 'b', 'c', '\0', 'd' };
 	if (argc == 4)
 	{
-		printf("compared strings and the diff is %d\n", ft_memcmp(argv[1], argv[2], atoi(argv[3])));
+		printf("diff is %d\n", ft_memcmp(argv[1], argv[2], 
+atoi(argv[3])));
 	}
 	return (0);
 

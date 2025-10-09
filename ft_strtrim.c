@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 10:35:23 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:51:00 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:30:14 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	i;
 	size_t	end;
 	size_t	start;
-	
+
 	if (!s1 || !set)
 		return (NULL);
 	start = 0;
 	while (s1[start] && ft_inset(s1[start], set))
 		start++;
 	end = start;
-	while(s1[end])
+	while (s1[end])
 		end++;
 	while (end > start && ft_inset(s1[end - 1], set))
 		end--;

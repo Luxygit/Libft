@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 19:52:15 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 17:15:11 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:28:42 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	ft_strlen(const char *s)
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char		*res;
+	char			*res;
 	unsigned int	i;
 
 	if (s == NULL || f == NULL)

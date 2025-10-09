@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 19:58:57 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:58:53 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:15:56 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*p;
-	unsigned char	uc;
+	unsigned char		uc;
 
 	p = s;
 	uc = (unsigned char)c;
@@ -38,7 +38,8 @@ int	main(int argc, char *argv[])
 	if (argc == 4)
 	{
 		printf("c was %c\n", argv[2][0]);
-		printf("found in the str %p\n", (void *)ft_memchr(argv[1], argv[2][0], atoi(argv[3])));
+		printf("found  %p\n", (void *)ft_memchr(argv[1], 
+argv[2][0], atoi(argv[3])));
 	}
 	return (0);
 }*/

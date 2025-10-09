@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 23:08:16 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:51:13 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:12:24 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	while (*str == ' ' || (*str >= '\t' && *str <= '\r'))
 		str++;
-
 	if (*str == '+' || *str == '-')
 	{
 		if (*str == '-')
@@ -33,7 +32,6 @@ int	ft_atoi(const char *str)
 		result = result * 10 + (*str - '0');
 		str++;
 	}
-
 	return (result * sign);
 }
 /*

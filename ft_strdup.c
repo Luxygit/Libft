@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 15:17:36 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:55:21 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:24:44 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strdup(const char *s1)
 {
 	char	*ptr;
 	char	*dup;
-	int	len;
+	int		len;
 
 	len = 0;
 	while (s1[len] != '\0')
@@ -29,7 +29,6 @@ char	*ft_strdup(const char *s1)
 	ptr = malloc(len + 1);
 	if (!ptr)
 		return (NULL);
-	
 	dup = ptr;
 	while (*s1)
 	{

@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 22:17:42 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 17:41:55 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:27:59 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		while (*s1)
 			*ptr++ = *s1++;
 	if (s2)
-		while(*s2)
+		while (*s2)
 			*ptr++ = *s2++;
 	*ptr = '\0';
 	return (joint);

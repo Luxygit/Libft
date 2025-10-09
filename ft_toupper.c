@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 15:42:05 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:58:29 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:32:30 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		c = c - 32;
-
 	return (c);
 }
 /*

@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 21:58:41 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 17:36:06 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:29:27 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	if (!*needle)
 		return ((char *)haystack);
-
 	i = 0;
 	while (haystack[i] && len > i)
 	{
@@ -45,7 +44,8 @@ int	main(int argc, char *argv[])
 {
 	if (argc == 4)
 	{
-		printf("found str in the str %s\n", ft_strnstr(argv[1], argv[2], atoi(argv[3])));
+		printf("found str in the str %s\n", 
+ft_strnstr(argv[1], argv[2], atoi(argv[3])));
 	}
 	return (0);
 }*/

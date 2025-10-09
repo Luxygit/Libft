@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 14:21:31 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:50:28 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:23:53 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,11 @@
 
 static int	ft_count(const char *s, char c)
 {
-	int	count = 0;
-	int	contained = 0;
+	int	count;
+	int	contained;
 
+	count = 0;
+	contained = 0;
 	while (*s)
 	{
 		if (*s != c && !contained)
@@ -35,8 +37,8 @@ static int	ft_count(const char *s, char c)
 static char	*ft_dup(const char *s, int len)
 {
 	char	*word;
-	int	i;
-	
+	int		i;
+
 	i = 0;
 	word = malloc(len + 1);
 	if (!word)
@@ -53,8 +55,8 @@ static char	*ft_dup(const char *s, int len)
 char	**ft_split(char const *s, char c)
 {
 	char	**res;
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 
 	i = 0;
 	if (!s)

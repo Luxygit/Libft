@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 09:13:05 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:58:01 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:25:06 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	unsigned int	i;
 
 	if (s == NULL || f == NULL)
-		return;
+		return ;
 	i = 0;
 	while (s[i] != '\0')
 	{

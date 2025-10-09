@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 17:45:31 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/08 14:57:02 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/09 12:13:52 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int	ft_numlen(int n)
 {
 	int	len;
 
-	len =  0;
+	len = 0;
 	if (n <= 0)
 		len = 1;
 	while (n != 0)
@@ -31,7 +31,7 @@ static int	ft_numlen(int n)
 char	*ft_itoa(int n)
 {
 	char	*str;
-	int	len;
+	int		len;
 	long	nb;
 
 	nb = n;
