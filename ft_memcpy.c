@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/04 12:20:47 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/09 13:12:54 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/14 16:19:33 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,18 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 /*
+
+This function takes a pointer dest, a constant pointer src 
+and a +number n that will tel us how many first bytes of c 
+will be copied from src to dest.
+For this I create two char type unsigned pointers d and s
+ and point them to same addresses as src and dst.
+Then the while loop iterates until before the n iterator 
+reaches 0 by diminishing it by 1 each time,
+it assigns the values to the d address and goes to the next bytes
+augmenting by 1 each pointer.
+It returns a pointer to dst.
+
 #include <stdio.h>
 #include <stdlib.h>
 int	main(int argc, char *argv[])

@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 23:08:16 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/09 12:12:24 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/14 18:32:25 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-/*
+
 #include <stdio.h>
 #include <stdlib.h>
 int	main(int argc, char *argv[])
@@ -44,4 +44,4 @@ int	main(int argc, char *argv[])
 		printf("string converted to int %d\n", ft_atoi(argv[1]));
 	}
 	return (0);
-}*/
+}

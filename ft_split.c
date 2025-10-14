@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 14:21:31 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/12 13:46:45 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:13:33 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 static int	ft_count(char const *s, char c)
 {
 	int	n;
-	
+
 	n = 0;
 	if (!*s)
 		return (0);
@@ -51,7 +51,7 @@ static void	*ft_freeall(char **mem, size_t i)
 
 static void	ft_splstr(char **ptr, char *str, char c, int n)
 {
-	int	i;
+	int		i;
 	char	*aux;
 
 	i = 0;
@@ -77,7 +77,7 @@ static void	ft_splstr(char **ptr, char *str, char c, int n)
 
 char	**ft_split(char const *s, char c)
 {
-	int	n;
+	int		n;
 	char	**ptr;
 	char	*str;
 	char	a[2];
@@ -92,7 +92,7 @@ char	**ft_split(char const *s, char c)
 			n = ft_count(str, c);
 			ptr = ft_calloc((n + 1), sizeof(char *));
 			if (ptr)
-				ft_splstr(ptr, str, c , n);
+				ft_splstr(ptr, str, c, n);
 			free(str);
 			return (ptr);
 		}
@@ -108,7 +108,7 @@ int	main(int argc, char *argv[])
 	char	**result;
 
 	i = 0;
-	result = ft_split(argv[1], argv[2][0]);
+	result = ft_split(argv[1], 0);
 	if (argc > 0 )
 	{
 		while (result[i])
@@ -117,10 +117,5 @@ int	main(int argc, char *argv[])
 			i++;
 		}
 	}
-	char *token = strtok(argv[1], &argv[2][0]);
-	while (token != NULL) {
-        printf(" %s\n", token);
-       token = strtok(NULL, " - ");
-    }
 	return (0);
 }

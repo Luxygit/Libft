@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 17:40:17 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/09 12:29:43 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/14 18:28:34 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	return ((char *)last);
 }
-/*
+
 #include <stdio.h>
 #include <stdlib.h>
 int	main(int argc, char *argv[])
@@ -39,4 +39,4 @@ int	main(int argc, char *argv[])
 		printf("found in the str %s\n", ft_strrchr(argv[1], argv[2][0]));
 	}
 	return (0);
-}*/
+}

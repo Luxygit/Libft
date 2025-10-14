@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 19:52:27 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/09 13:22:32 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/14 15:04:38 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,13 @@ size_t	ft_strlen(const char *s)
 	return (count);
 }
 /*
+
+This function takes the string s by its pointer,
+in a while loop, until the evaluated byte is \0,
+adds 1 to the count value each time,
+and returns it as the length of s.
+
+
 #include <stdio.h>
 int	main(int argc, char *argv[])
 {
