@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/04 13:36:24 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/14 18:22:16 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/17 10:45:10 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ Otherwise it adds d and s the lenght so their equal to thei last
 by 1 from backwards.
 It returns a pointer to dst.
 
-*/
+
 #include <stdio.h>
 #include <stdlib.h>
 int	main(int argc, char *argv[])
@@ -67,4 +67,4 @@ int	main(int argc, char *argv[])
 		printf("ptr is now %s\n", arrd);
 	}
 	return (0);
-}
+}*/

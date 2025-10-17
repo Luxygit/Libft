@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 22:17:42 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/14 18:37:21 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/17 10:44:25 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	*ptr = '\0';
 	return (joint);
 }
-
-
+/*
 #include <stdio.h>
 int	main(int argc, char *argv[])
 {
@@ -48,4 +47,4 @@ int	main(int argc, char *argv[])
 		printf("objs memory alloc %s\n", ft_strjoin(argv[1], argv[2]));
 	}
 	return (0);
-}
+}*/

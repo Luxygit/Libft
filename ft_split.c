@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 14:21:31 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/14 19:13:33 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/17 10:44:48 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ char	**ft_split(char const *s, char c)
 	}
 	return (0);
 }
-
+/*
 #include <string.h>
 #include <stdio.h>
 int	main(int argc, char *argv[])
@@ -118,4 +118,4 @@ int	main(int argc, char *argv[])
 		}
 	}
 	return (0);
-}
+}*/
