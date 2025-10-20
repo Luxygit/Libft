@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 16:10:10 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/09 12:24:19 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/17 20:56:47 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,17 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 /*
+
+This function takes the string s by its pointer,
+and a c char value to be looked for in the s string.
+In a while loop, until the evaluated byte is \0,
+if the pointer passed is equal to c we return
+early that s pointer.
+But if c is null or 0 then the null terminator
+of s will be located and its s pointer returned. 
+It returns a pointer to the first ocurrance of c 
+in s or NULL if not found.
+
 #include <stdio.h>
 #include <stdlib.h>
 int	main(int argc, char *argv[])

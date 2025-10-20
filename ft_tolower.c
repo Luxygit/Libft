@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 16:08:42 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/09 12:32:14 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/16 21:28:16 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,14 @@ int	ft_tolower(int c)
 	return (c);
 }
 /*
+
+This function takes a value that must be representable as an
+unsigned char.
+To convert this value to uppercase the if condition tracks
+lowercase chars and adds 32 following the values of the
+ASCII table.
+It returns the uppercase letter if possible otherwise unchanged.
+
 #include <stdio.h>
 #include <stdlib.h>
 int	main(int argc, char *argv[])

@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 21:15:33 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/09 12:16:30 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/19 20:28:40 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,17 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 /*
+
+This function takes two pointers of any type
+and a n number that is the lenght of them.
+For this I create two pointers with a char 
+type and assign it the S pointers.
+In a while loop, until before n reaches 0,
+if the pointer passed arent equal we return
+early the difference of the values.
+It returns 0 if there is no difference.
+
+
 #include <stdio.h>
 #include <stdlib.h>
 int	main(int argc, char *argv[])

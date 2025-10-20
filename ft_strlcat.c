@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 14:50:15 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/14 18:17:48 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/15 21:08:21 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,17 +40,20 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 /*
 
 This function takes two null terminated strings src and dst, 
-and dstsize +number that will tel us the size of bytes of src
-to be appended to dst always saving one byte for the null byte.
+and dstsize +number that will tel us the max size of bytes that 
+can be written in dst without causing overflow, including one
+byte for the null terminator.
 I create a dstlen iterator that will increase+1 until the end of
 dstlen and while dstlen leaves space for dstsize.
 Also while the loop iterates through src, srclen augments.
-Then when dstlen is equal to dstsize it returns early the sum
-of dstsize + srclen.
-it assigns the values to the d address and goes to the next bytes
-augmenting by 1 each pointer.
-assigns null to the last byte.
-It returns the lenghts of dst and src altogether.
+Then when dstlen is equal to dstsize meaning theres no more room
+to cat more bytes it still returns early the sum of dstsize + 
+srclen that it TRIED to build.
+it assigns the values to the dst address and goes to the next 
+bytes augmenting by 1 each pointer.
+And assigns null to the last byte.
+It returns the lenghts of dst and src altogether as it is the one
+it TRIED to build. Used to see if the cat is truncated.
 
 #include <stdio.h>
 #include <stdlib.h>
