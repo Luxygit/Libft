@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 19:21:58 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/09 12:55:23 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/21 12:30:59 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (ret);
 }
 /*
+
+This function takes a string s, an index
+start and the len size as the maximum
+length of the substring.
+First two new pointers are created as
+usual to maintain one untouched at its
+start and return it.
+If the original string is empty it 
+returns NULL early
 #include <stdio.h>
 int	main(int argc, char *argv[])
 {

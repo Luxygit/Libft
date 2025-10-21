@@ -6,7 +6,7 @@
 /*   By: dievarga <dievarga@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 15:17:36 by dievarga          #+#    #+#             */
-/*   Updated: 2025/10/09 12:24:44 by dievarga         ###   ########.fr       */
+/*   Updated: 2025/10/20 20:53:24 by dievarga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,20 @@ char	*ft_strdup(const char *s1)
 	return (dup);
 }
 /*
+This function takes a string that will
+be duped.
+Another string is created where it will
+allocate and copy the new string.
+Yet another pointer is created so that
+when moving the pointer to be returned
+it still remains at its start.
+It also measures the lenght of the
+original string so it can be passed
+to the malloc function.
+It copies all chars to the new pointer
+and lastly adds the null terminator.
+It returns NULL if not enough memory.
+
 #include <stdio.h>
 #include <string.h>
 int	main(int argc, char *argv[])
